@@ -1,0 +1,127 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* commom styles or utlities*/
+
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+.nav-contents{
+    font-size: 15px;
+}
+.btn-light{
+    color: DodgerBlue;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+.carousel-item p{
+    font-size: 12px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: black;
+    opacity: .4;
+}
+.pacage-card{
+    border-radius: 15px;
+    width: 290px;
+    position: relative;
+}
+.pacage-card-hot{
+    border-radius: 15px;
+    width: 290px;;
+    position: relative;
+    top: -30px;
+    filter: drop-shadow(0px 50px 15px #4444dd2c);
+    background-color: #292B35;
+}
+.btn{
+    background: #04AA6D;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    font-size: 12px;
+}
+.btn-special-card{
+        background: #FFF5A2;
+        color: rgb(66, 66, 66);
+        border-radius: 25px;
+        font-size: 12px;
+}
+.icon-badge{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    background: #E74C3C;
+    border-radius: 25px;
+    top: -10px;
+    align-items: center;
+    left: 200px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.alert{
+    width: 190px;
+    height: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    border-left: 6px solid rgb(0, 119, 255);
+
+}
+
+.alert-details{
+    font-size: 12px;
+}
+.alert-button {
+    float: right;
+    top: -23px;
+    height: 2px;
+    width: 2px;
+    position: relative;
+    
+}
+
+/* some media query */
+
+@media only screen and (max-width:688px) {
+    .carousel-caption{
+        padding: 0;
+    }
+    .slider-details{
+        margin: 0;
+    }
+    .btn-light {
+        margin-top: 0;
+    }
+    .fqa-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .fqa-question {
+        order: 2;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .copy-right {
+        order: 2;
+    }
+    .get-app {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
